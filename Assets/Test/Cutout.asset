@@ -34,7 +34,7 @@ MonoBehaviour:
         jitterSpread: 1
         sharpen: 0
         stationaryBlending: 0.95
-        motionBlending: 0.85
+        motionBlending: 0.9
   ambientOcclusion:
     m_Enabled: 0
     m_Settings:
@@ -46,7 +46,7 @@ MonoBehaviour:
       ambientOnly: 1
       highPrecision: 0
   screenSpaceReflection:
-    m_Enabled: 1
+    m_Enabled: 0
     m_Settings:
       reflection:
         blendType: 0
@@ -64,11 +64,20 @@ MonoBehaviour:
         fresnelFadePower: 1
       screenEdgeMask:
         intensity: 0.03
+  fog:
+    m_Enabled: 0
+    m_Settings:
+      color: {r: 0.4, g: 0.42352942, b: 0.44313726, a: 0.6039216}
+      mode: 2
+      density: 0.001
+      start: 0
+      end: 600
+      excludeSkybox: 1
   depthOfField:
     m_Enabled: 1
     m_Settings:
       focusDistance: 3.5
-      aperture: 0.8
+      aperture: 1
       focalLength: 50
       useCameraFov: 1
       kernelSize: 1
@@ -104,7 +113,7 @@ MonoBehaviour:
         texture: {fileID: 0}
         intensity: 3
   colorGrading:
-    m_Enabled: 1
+    m_Enabled: 0
     m_Settings:
       tonemapping:
         tonemapper: 1
@@ -276,19 +285,19 @@ MonoBehaviour:
       lut: {fileID: 0}
       contribution: 1
   chromaticAberration:
-    m_Enabled: 1
+    m_Enabled: 0
     m_Settings:
       spectralTexture: {fileID: 0}
       intensity: 0.205
   grain:
-    m_Enabled: 1
+    m_Enabled: 0
     m_Settings:
       colored: 0
       intensity: 0.08
       size: 1
       luminanceContribution: 0.8
   vignette:
-    m_Enabled: 1
+    m_Enabled: 0
     m_Settings:
       mode: 0
       color: {r: 0, g: 0, b: 0, a: 1}
@@ -298,6 +307,8 @@ MonoBehaviour:
       roundness: 1
       mask: {fileID: 0}
       opacity: 1
+  dithering:
+    m_Enabled: 0
   monitors:
     currentMonitorID: 0
     refreshOnPlay: 0
