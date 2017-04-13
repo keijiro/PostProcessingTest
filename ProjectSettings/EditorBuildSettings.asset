@@ -6,4 +6,5 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Test/DOF.unity
+    path: Assets/Test/Reflection.unity
+    guid: 6e6746772ab93f04e9f4f3356e8ca91d
